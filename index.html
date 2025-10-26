@@ -70,21 +70,24 @@
    <section id="gigs" class="mt-14">
   <div class="flex items-end justify-between flex-wrap gap-4">
     <h2 class="text-2xl md:text-3xl font-extrabold">My alter egos</h2>
-    <p class="text-neutral-600">Straight from Instagram — @alexdoes.fit</p>
+    <p class="text-neutral-600">Live on Instagram — @alexdoes.fit</p>
   </div>
 
   <div class="mt-6 rounded-3xl glass ring-sv overflow-hidden">
-    <!-- LightWidget Instagram Feed -->
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe 
-      src="//lightwidget.com/widgets/6f49a36d60d258979c4312bcc163715d.html" 
-      scrolling="no" 
-      allowtransparency="true" 
-      class="lightwidget-widget w-full"
-      style="border:0;overflow:hidden;aspect-ratio:4/3;">
-    </iframe>
+    <div class="relative w-full [aspect-ratio:1/1] sm:[aspect-ratio:4/3]">
+      <!-- SnapWidget -->
+      <iframe
+        src="https://snapwidget.com/embed/1111093"
+        class="absolute inset-0 w-full h-full"
+        style="border:none; overflow:hidden;"
+        allowtransparency="true"
+        scrolling="no"
+        title="Posts from Instagram">
+      </iframe>
+    </div>
   </div>
 </section>
+
 
 
     <!-- Result / Money Rain -->
@@ -111,9 +114,6 @@
 </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+
 </body>
 </html>
